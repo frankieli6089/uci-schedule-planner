@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# UCI Schedule Planner
+
+A web app that helps UC Irvine students search for courses, pick sections, and see their weekly schedule on a calendar, with automatic conflict detection.
+
+Planning tool only. It is not a replacement for UCI WebReg.
+
+## Features
+
+- Search courses by department and course number using live UCI WebSOC data
+- Browse lectures, discussions, and labs for each course
+- Select sections and add them to "My Schedule"
+- Conflict warnings when two sections overlap
+- Monday-Friday weekly calendar with color-coded courses
+
+## Tech Stack
+
+- Next.js, React, TypeScript
+- Tailwind CSS
+- [`websoc-api`](https://github.com/icssc/websoc-api) for UCI Schedule of Classes data
 
 ## Getting Started
 
-First, run the development server:
+Requires Node.js 20.9 or newer.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Roadmap
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Search by course name
+- Term selector
+- Saved schedules and user accounts (PostgreSQL)
